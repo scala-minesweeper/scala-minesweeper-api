@@ -13,7 +13,7 @@ trait Game {
 
   def isFinished: Boolean
 
-  def getScore: Option[GameResult]
+  def gameResult: Option[GameResult]
 
   def checkWin: Boolean
 

@@ -1,9 +1,9 @@
 package de.htwg.mps.minesweeper.api.events
 
-import de.htwg.mps.minesweeper.api.Player
+import de.htwg.mps.minesweeper.api.{GameResult, Player}
 
-case class PlayerModel(history: List[GameResultModel])
+case class PlayerModel(history: List[GameResult])
 
 object PlayerModel {
-  def apply(player: Player): PlayerModel = new PlayerModel(player.history.map(GameResultModel(_)))
+  def apply(player: Player): PlayerModel = new PlayerModel(player.history)
 }
