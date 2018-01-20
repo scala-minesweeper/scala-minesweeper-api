@@ -4,7 +4,7 @@ scala:
 script:
   - sbt clean && sbt compile
 after_success:
-  - sbt coveralls
+  - sbt publishLocal
 notifications:
   email:
     on_success: never
